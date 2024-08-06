@@ -19,6 +19,7 @@ public class JoinController {
 		
 		joinService.joinUser(joinBean);
 		
+		System.out.println("안녕");
 		return "";
 	}
 }
