@@ -14,5 +14,7 @@ public class HomeController {
 		
 		return "redirect:/main";
 	}
+	
+	
 }
 
