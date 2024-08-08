@@ -3,7 +3,7 @@
 
 <!-- 절대경로 -->
 <c:set var="root" value="${pageContext.request.contextPath }/" />
-
+<!-- 잡다 -->
 <!DOCTYPE html>
 <html>
 <head>

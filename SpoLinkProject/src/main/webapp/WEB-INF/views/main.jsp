@@ -32,8 +32,7 @@
 }
 </script>
 
-<!-- 제발 되라고 진짜됐다-->
-
+ <!-- 제발 되라고 진짜됐다 -->
 
 <meta name="theme-color" content="#478ac9">
 <meta property="og:title" content="main">
