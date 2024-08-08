@@ -13,8 +13,8 @@
 <meta name="keywords" content="Sports Link​">
 <meta name="description" content="">
 <title>main</title>
-<link rel="stylesheet" href="${root }css/nicepage.css" media="screen">
-<link rel="stylesheet" href="${root }css/main.css" media="screen">
+<link rel="stylesheet" href="${root}css/nicepage.css" media="screen">
+<link rel="stylesheet" href="${root}css/main.css" media="screen">
 <script class="u-script" type="text/javascript"
 	src="${root }js/jquery-1.9.1.min.js" defer=""></script>
 <script class="u-script" type="text/javascript" src="${root }js/nicepage.js"
@@ -22,12 +22,6 @@
 <meta name="generator" content="Nicepage 6.15.2, nicepage.com">
 <link id="u-theme-google-font" rel="stylesheet"
 	href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
-
-
-
-
-
-
 
 
 
