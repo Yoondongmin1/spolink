@@ -29,7 +29,10 @@
 		"name": "",
 		"logo": "images/default-logo.png",
 		"sameAs": []
-}</script>
+}
+</script>
+
+<!-- 제발 되라고 -->
 
 
 <meta name="theme-color" content="#478ac9">
