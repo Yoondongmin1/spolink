@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 import spoLink.beans.JoinBean;
 import spoLink.mapper.JoinMapper;
 
-@Repository
+//@Repository
 public class JoinDAO {
 	
 	@Autowired

@@ -1,4 +1,4 @@
-package spoLink.controller;
+package kr.co.softsoldesk.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -11,13 +11,13 @@ import spoLink.service.JoinService;
 
 @Controller
 public class JoinController {
-	/*
+	
 	@Autowired
 	private JoinService joinService;
-	*/
+	
 	
 	@GetMapping("/join")
-	private String join() {
+	private String join(@ModelAttribute("joinBean") JoinBean joinBean) {
 		
 		
 		System.out.println("ㅇㅇㅇㅇㅇ");
@@ -25,7 +25,7 @@ public class JoinController {
 		return "join/joinMain";
 		
 	}
-	/*
+	
 	@PostMapping("/user/join")
 	private String Join(@ModelAttribute("joinBean") JoinBean joinBean) {
 		
@@ -33,5 +33,5 @@ public class JoinController {
 		
 		System.out.println("안녕");
 		return "";
-	}*/
+	}
 }

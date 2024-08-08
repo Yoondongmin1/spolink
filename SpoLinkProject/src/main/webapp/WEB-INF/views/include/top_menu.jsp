@@ -39,7 +39,11 @@
         <a href="#" class="u-image u-logo u-image-1">
           <img src="${root }images/default-logo.png" class="u-logo-image u-logo-image-1">
         </a>
-        <a href="${root }views/user/join" class="u-btn u-button-style u-btn-1">Join </a>
+        
+        <!-- #2 JSP 요청 -->
+        <a href="${root}user/join" class="u-btn u-button-style u-btn-1">Join </a>
+        
+        
         <a href="#" class="u-border-none u-btn u-button-style u-grey-10 u-btn-2">Login </a>
         <form action="#" method="get" class="u-align-center u-border-1 u-border-grey-30 u-search u-search-left u-white u-search-1">
           <button class="u-search-button" type="submit">
