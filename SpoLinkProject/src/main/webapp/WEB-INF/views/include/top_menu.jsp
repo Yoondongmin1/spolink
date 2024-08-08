@@ -5,54 +5,58 @@
 <c:set var="root" value="${pageContext.request.contextPath }/" />
 
 <!-- 상단 메뉴 부분 -->
-  <header class="u-clearfix u-header u-header" id="sec-bc47">
-  <div class="u-clearfix u-sheet u-sheet-1">
-        <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1">
-          <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
-            <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
-              <svg class="u-svg-link" viewBox="0 0 24 24"><use xlink:href="#menu-hamburger"></use></svg>
-              <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+  <header class="u-clearfix u-custom-color-1 u-header" id="sec-bc47" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <a href="#" class="u-align-center u-image u-logo u-image-1">
+          <img src="${root }images/default-logo.png" class="u-logo-image u-logo-image-1">
+        </a>
+        <a href="#" class="u-border-none u-btn u-btn-round u-button-style u-grey-10 u-radius u-btn-1">Login </a>
+        <a href="#" class="u-btn u-btn-round u-button-style u-radius u-btn-2">Join </a>
+        <nav class="u-align-center u-dropdown-icon u-menu u-menu-dropdown u-offcanvas u-menu-1" data-responsive-from="MD" data-position="">
+          <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px; font-weight: 700;">
+            <a class="u-button-style u-custom-active-border-color u-custom-active-color u-custom-border u-custom-border-color u-custom-border-radius u-custom-borders u-custom-color u-custom-custom-border-radius u-custom-effect-duration u-custom-hover-border-color u-custom-hover-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-decoration u-custom-text-hover-color u-custom-text-shadow u-custom-text-shadow-blur u-custom-text-shadow-color u-custom-text-shadow-transparency u-custom-text-shadow-x u-custom-text-shadow-y u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
+              <svg class="u-svg-link" viewBox="0 0 24 24"><use xlink:href="#svg-8c98"></use></svg>
+              <svg class="u-svg-content" version="1.1" id="svg-8c98" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
 </g></svg>
             </a>
           </div>
           <div class="u-custom-menu u-nav-container">
-            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="./" style="padding: 10px 88px;">Home</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="About.html" style="padding: 10px 88px;">About</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Contact.html" style="padding: 10px 88px;">Contact</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Page-1.html" style="padding: 10px 89px 10px 88px;">Page 1</a>
+            <ul class="u-nav u-spacing-20 u-unstyled u-nav-1">
+            <li class="u-nav-item">
+            <a class="u-active-custom-color-8 u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-custom-color-1 u-hover-custom-color-8 u-nav-link u-text-active-white u-text-hover-white" href="#" style="padding: 50px 20px;">대회정보</a>
+            <div class="u-nav-popup">
+            <ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-2">
+            <li class="u-nav-item">
+            <a class="u-active-palette-1-dark-1 u-button-style u-custom-color-1 u-hover-palette-1-dark-1 u-nav-link">대회 일정</a>
+</li><li class="u-nav-item"><a class="u-active-palette-1-dark-1 u-button-style u-custom-color-1 u-hover-palette-1-dark-1 u-nav-link">대회 상세 정보</a>
+</li></ul>
+</div>
+</li><li class="u-nav-item"><a class="u-active-custom-color-8 u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-custom-color-1 u-hover-custom-color-8 u-nav-link u-text-active-white u-text-hover-white" href="#" style="padding: 50px 20px;">용병등록</a>
+</li><li class="u-nav-item"><a class="u-active-custom-color-8 u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-custom-color-1 u-hover-custom-color-8 u-nav-link u-text-active-white u-text-hover-white" href="#" style="padding: 50px 20px;">자원봉사자</a>
+</li><li class="u-nav-item"><a class="u-active-custom-color-8 u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-custom-color-1 u-hover-custom-color-8 u-nav-link u-text-active-white u-text-hover-white" href="/" style="padding: 50px 20px;">팀/팀원 등록</a>
+</li><li class="u-nav-item"><a class="u-active-custom-color-8 u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-custom-color-1 u-hover-custom-color-8 u-nav-link u-text-active-white u-text-hover-white" style="padding: 50px 20px;">대회 등록</a>
+</li><li class="u-nav-item"><a class="u-active-custom-color-8 u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-custom-color-1 u-hover-custom-color-8 u-nav-link u-text-active-white u-text-hover-white" style="padding: 50px 20px;">이용안내</a>
 </li></ul>
           </div>
           <div class="u-custom-menu u-nav-container-collapse">
             <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
               <div class="u-inner-container-layout u-sidenav-overflow">
                 <div class="u-menu-close"></div>
-                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="./">Home</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="About.html">About</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Contact.html">Contact</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Page-1.html">Page 1</a>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-3"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#">대회정보</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-4"><li class="u-nav-item"><a class="u-button-style u-custom-color-1 u-nav-link">대회 일정</a>
+</li><li class="u-nav-item"><a class="u-button-style u-custom-color-1 u-nav-link">대회 상세 정보</a>
+</li></ul>
+</div>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#">용병등록</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#">자원봉사자</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/">팀/팀원 등록</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">대회 등록</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">이용안내</a>
 </li></ul>
               </div>
             </div>
-            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+            
           </div>
         </nav>
-        <a href="#" class="u-image u-logo u-image-1">
-          <img src="${root }images/default-logo.png" class="u-logo-image u-logo-image-1">
-        </a>
-        
-        <!-- #2 JSP 요청 -->
-        <a href="${root}user/join" class="u-btn u-button-style u-btn-1">Join </a>
-        
-        
-        <a href="#" class="u-border-none u-btn u-button-style u-grey-10 u-btn-2">Login </a>
-        <form action="#" method="get" class="u-align-center u-border-1 u-border-grey-30 u-search u-search-left u-white u-search-1">
-          <button class="u-search-button" type="submit">
-            <span class="u-search-icon u-spacing-10">
-              <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 56.966 56.966"><use xlink:href="#svg-12bf"></use></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="svg-12bf" x="0px" y="0px" viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve" class="u-svg-content"><path d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z"></path></svg>
-            </span>
-          </button>
-          <input class="u-search-input" type="search" name="search" value="" placeholder="Search">
-        </form>
-      </div></header>
-      
+      </div>
+      </header>
+       
+     

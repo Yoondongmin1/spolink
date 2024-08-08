@@ -2,7 +2,6 @@
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
-<!-- 절대경로 -->
 <c:set var="root" value="${pageContext.request.contextPath }/" />
 
 <!DOCTYPE html>
@@ -15,15 +14,17 @@
 <title>join</title>
 <link rel="stylesheet" href="nicepage.css" media="screen">
 <link rel="stylesheet" href="join.css" media="screen">
-<script class="u-script" type="text/javascript"
-	src="${root}js/jquery-1.9.1.min.js" defer=""></script>
-<script class="u-script" type="text/javascript"
-	src="${root}js/nicepage.js" defer=""></script>
-<meta name="generator" content="Nicepage 6.15.2, nicepage.com">
-<meta name="referrer" content="origin">
-<link id="u-theme-google-font" rel="stylesheet"
-	href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
-
+    <script class="u-script" type="text/javascript" src="${root }js/jquery-1.9.1.min.js" defer ></script>
+    <script class="u-script" type="text/javascript" src="${root }js/nicepage.js" defer></script>
+    <meta name="generator" content="Nicepage 6.15.2, nicepage.com">
+    <meta name="referrer" content="origin">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+	 <script class="u-script" type="text/javascript" src="jquery-1.9.1.min.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 6.15.2, nicepage.com">
+    <meta name="referrer" content="origin">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    
 
 
 <script type="application/ld+json">{
@@ -32,7 +33,8 @@
 		"name": "",
 		"logo": "/images/default-logo.png",
 		"sameAs": []
-}</script>
+}
+</script>
 <meta name="theme-color" content="#478ac9">
 <meta property="og:title" content="join">
 <meta property="og:type" content="website">
