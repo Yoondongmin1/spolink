@@ -29,7 +29,8 @@
 		"name": "",
 		"logo": "images/default-logo.png",
 		"sameAs": []
-}</script>
+}
+</script>
 
 
 <meta name="theme-color" content="#478ac9">
