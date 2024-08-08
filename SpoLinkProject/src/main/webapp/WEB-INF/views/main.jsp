@@ -23,8 +23,6 @@
 <link id="u-theme-google-font" rel="stylesheet"
 	href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
 
-
-
 <script type="application/ld+json">{
 		"@context": "http://schema.org",
 		"@type": "Organization",
@@ -32,6 +30,8 @@
 		"logo": "images/default-logo.png",
 		"sameAs": []
 }</script>
+
+
 <meta name="theme-color" content="#478ac9">
 <meta property="og:title" content="main">
 <meta property="og:type" content="website">
@@ -60,9 +60,7 @@
 					<p
 						class="u-align-center u-large-text u-text u-text-variant u-text-2">
 						簡単に各種の大会の情報を得られることとい色んなスポーツに関わる情報共有および交流の目的として作られたスポーツ統合ウェブサイト。</p>
-					<a href="#"
-						class="u-align-center u-btn u-button-style u-palette-2-base u-btn-1">더보기
-					</a>
+					
 				</div>
 			</div>
 		</div>
