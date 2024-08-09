@@ -26,7 +26,7 @@
 	<script>
         // 카카오 SDK 초기화
         Kakao.init('64d3e413591e4a5d7e3b0b66856f56a4');
-
+	/* 김용민 */
         function loginWithKakao() {
             Kakao.Auth.login({
 /*             	scope: 'profile_nickname,profile_image,email', // 필요한 권한 요청 설정
