@@ -32,8 +32,6 @@
 }
 </script>
 
- <!-- 김용민 -->
- 
 
 <meta name="theme-color" content="#478ac9">
 <meta property="og:title" content="main">
