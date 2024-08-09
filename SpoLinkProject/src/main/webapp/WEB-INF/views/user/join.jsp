@@ -20,8 +20,68 @@
     <meta name="generator" content="Nicepage 6.15.2, nicepage.com">
     <meta name="referrer" content="origin">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
-    
-<!-- 왜안되냐고123123 ㅡㅡ -->
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+<!-- 2024-08-09 -->
+<!-- 카카오 SDK를 추가 -->
+	<script>
+        // 카카오 SDK 초기화
+        Kakao.init('64d3e413591e4a5d7e3b0b66856f56a4');
+
+        function loginWithKakao() {
+            Kakao.Auth.login({
+/*             	scope: 'profile_nickname,profile_image,email', // 필요한 권한 요청 설정
+ */                
+ 				success: function(authObj) {
+                    Kakao.API.request({
+                        url: '/v2/user/me',
+                        success: function(res) {
+                            if (res.kakao_account && res.kakao_account.profile) {
+                                var userInfo = {
+                                    id: res.id,
+                                    nickname: res.kakao_account.profile.nickname,
+                                    email: res.kakao_account.email || "이메일 정보가 없습니다."
+                                };
+                                console.log(userInfo);
+                                
+                             // 리디렉션 구글로 빠지면 로그인 성공 (정보 가져옴 (ID, 닉네임))
+							//window.location.href = "http://google.com"; // 여기에 원하는 페이지 URL을 입력하세요
+								console.log("로그인 성공");
+                                
+                            } else {
+                                console.log('Profile 정보가 제공되지 않았습니다.');
+                                
+                             
+                            }
+                        },
+                        fail: function(error) {
+                            console.log(error);
+                        }
+                    });
+                },
+                fail: function(err) {
+                    alert(JSON.stringify(err));
+                }
+            });
+        }
+
+        
+        // 카카오톡 연결 해제
+        function unlinkWithKakao() {
+            Kakao.API.request({
+                url: '/v1/user/unlink',
+                success: function(response) {
+                    console.log(response);
+                    alert('카카오톡과의 연결이 해제되었습니다.');
+                    window.location.reload();
+                },
+                fail: function(error) {
+                    console.log(error);
+                    alert('연결 해제 중 오류가 발생했습니다.');
+                }
+            });
+        }
+    </script>
+
 
 <script type="application/ld+json">{
 		"@context": "http://schema.org",
@@ -30,6 +90,8 @@
 		"logo": "/images/default-logo.png",
 		"sameAs": []
 }
+
+
 </script>
     <meta name="theme-color" content="#2676c1">
     <meta property="og:title" content="join">
@@ -92,9 +154,27 @@
               </a>
               <a href="#" class="u-align-center u-border-none u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-radius u-white u-btn-4"><span class="u-file-icon u-icon u-icon-2"><img src="${root }images/google_icon-removebg-preview.png" alt=""></span>&nbsp;Google
               </a>
-              <a href="#" class="u-align-center u-border-none u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-radius u-white u-btn-5"><span class="u-file-icon u-icon u-icon-3"><img src="${root }images/pngwing.com__2_-removebg-preview.png" alt=""></span>&nbsp;Kakaotalk
-              </a>
+              
+              
+              
+              
+              <!-- 카카오 API 작업 -->
+              <%-- <a href="#" class="u-align-center u-border-none u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-radius u-white u-btn-5"><span class="u-file-icon u-icon u-icon-3"><img src="${root }images/pngwing.com__2_-removebg-preview.png" alt=""></span>&nbsp;Kakaotalk
+              </a> --%>
+              <a href="javascript:void(0);" onclick="loginWithKakao()" class="u-align-center u-border-none u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-radius u-white u-btn-5">
+				    <span class="u-file-icon u-icon u-icon-3">
+				        <img src="${root }images/pngwing.com__2_-removebg-preview.png" alt="">
+				    </span>&nbsp;Kakaotalk
+				</a>
             </div>
+            
+            <!-- 2024-08-09 -->
+           	<!-- 카카오톡 연결 해제용 버튼 -->
+            <!-- <button onclick="unlinkWithKakao()">카카오톡 연결 해제</button> -->
+            
+            
+            
+            
             <div class="u-clearfix u-group-elements u-group-elements-2">
               <p class="u-align-left u-text u-text-4">이미 회원 가입이 되​어있다면,</p>
               <a href="#" class="u-active-none u-border-3 u-border-no-left u-border-no-right u-border-no-top u-border-white u-btn u-btn-rectangle u-button-style u-hover-none u-none u-text-white u-btn-6">로그인 </a>
